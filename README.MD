@@ -16,14 +16,14 @@ Navigate to the directory where you want to store this project
 Clone the repo for local development
 `git clone https://github.com/WarrenJohn/vuepress-blog.git`
 
-Change current working directory into project
-`cd vuepress-blog`
+Change current working directory into project with
+`cd vuepress-blog && blog`
 
-Initialize the dev server
+Initialize the dev server with
 `vuepress dev`
 
-Build for production
+Build for production with
 `vuepress build`
 
-Modify layout, styles & components
+Modify layout, styles & components with
 `vuepress eject`
