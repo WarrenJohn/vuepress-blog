@@ -17,7 +17,7 @@ Clone the repo for local development
 `git clone https://github.com/WarrenJohn/vuepress-blog.git`
 
 Change current working directory into project with
-`cd vuepress-blog && blog`
+`cd vuepress-blog && cd blog`
 
 Initialize the dev server with
 `vuepress dev`
