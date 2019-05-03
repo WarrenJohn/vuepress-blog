@@ -7,11 +7,11 @@ This is a standard template to get you started with a VuePress Blog template
 2. Sort articles by newest/oldest
 3. Post-dated articles
 
-It's a pretty simple template, VuePress allows you to hook Google Analytics up easily with a plugin if you want that.
+It's a pretty simple template, VuePress allows you to hook Google Analytics up easily with a plugin. If you want that, just go to .vuepress/config.js and add your analytics tracking ID.
 
-If you want to post-date articles, simply date the article in the future, and the page won't be displayed until that date.
+If you want to post-date articles, simply date the article in the future, and the page won't be published until that date.
 
-You can change the color of the topics in the style.styl file. The class name is added to the html element, so the naming convention is the css class needs to have the same name as the frontmatter topic.
+You can change the color of the topics in the style.styl file. The frontmatter topic is added to the html element as the class, so the naming convention is the css class needs to have the same name as the frontmatter topic.
 
 ## Installation
 Make sure you have [VuePress installed](https://vuepress.vuejs.org/guide/getting-started.html#global-installation) first
