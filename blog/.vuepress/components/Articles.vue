@@ -1,7 +1,7 @@
 <template lang="html">
 
     <div class="">
-        <div class="">
+        <div class="sort-container">
             <button type="button" name="button" @click="sortNewest()">Newest</button>
             <button type="button" name="button" @click="sortOldest()">Oldest</button>
         </div>
@@ -30,6 +30,7 @@ export default {
         return{
             site: this.siteMetaData.pages
                         .filter(page => (page.frontmatter.topic))
+                        .filter(page => (new Date(page.frontmatter.date) <= new Date()))
                         .sort((a,b) => ((new Date(b.frontmatter.date) - new Date(a.frontmatter.date))))
         }
     },

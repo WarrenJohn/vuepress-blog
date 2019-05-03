@@ -6,6 +6,15 @@ module.exports = {
             {text:'PYTHON', link:'/python/'},
             {text:'SQL', link:'/sql/'}
         ],
-        sidebar:'auto'
+        sidebar:'auto',
+        plugins:[
+            [
+                    '@vuepress/google-analytics',
+                {
+                    ga: '' // UA-00000000-0
+                }
+            ],
+
+        ]
     }
 }

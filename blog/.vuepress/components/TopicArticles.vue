@@ -33,6 +33,7 @@ export default {
         return{
             site: this.siteMetaData.pages
                         .filter(page => (page.frontmatter.topic === this.pageTopic))
+                        .filter(page => (new Date(page.frontmatter.date) <= new Date()))
                         .sort((a,b) => ((new Date(b.frontmatter.date) - new Date(a.frontmatter.date))))
         }
     },
